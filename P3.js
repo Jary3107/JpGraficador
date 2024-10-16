@@ -1,3 +1,14 @@
+
+function insertValue(value) {
+    const input = document.getElementById('parametricFunction');
+    input.value += value;
+}
+
+// Función para limpiar el campo de texto
+function clearInput() {
+    const input = document.getElementById('parametricFunction');
+    input.value = '';
+}
 function parametricToFunction(func) {
     const [xFunc, yFunc, zFunc] = func.split(',').map(f => f.trim());
     return { 
