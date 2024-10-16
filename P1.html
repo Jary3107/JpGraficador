@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Longitud de Arco y Curvatura 3D</title>
+    <link rel="stylesheet" href="P2.css">
+    
+    <!-- Incluir MathJax para renderizar fórmulas matemáticas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<h1>Cálculo de Longitud de Arco y Curvatura en 3D</h1>
+<div id="form-container">
+    <input type="text" id="parametricFunction" placeholder="Ingresa la función (x(t), y(t), z(t))" />
+    <input type="number" id="tStart" placeholder="Inicio de t" />
+    <input type="number" id="tEnd" placeholder="Fin de t" />
+    <button onclick="calculate()">Calcular</button>
+</div>
+
+<div id="output"></div>
+<div id="graphContainer"></div>
+
+<!-- Contenedor para las fórmulas -->
+<div id="formulas-container">
+    <h2>Fórmulas:</h2>
+    <p><strong>Longitud de Arco:</strong> 
+        \( L = \int_{t_1}^{t_2} \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2} \, dt \)
+    </p>
+    <p><strong>Curvatura:</strong> 
+        \( \kappa = \frac{|r'(t) \times r''(t)|}{|r'(t)|^3} \)
+    </p>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="P3.js"></script>
+
+</body>
+</html>
