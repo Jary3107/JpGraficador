@@ -83,15 +83,15 @@ button:hover {
 #calculator-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 10px; /* Espacio entre botones */
+    gap: 8px; /* Espacio entre botones */
     margin-top: 20px;
 }
 
 #calculator-buttons button {
-    padding: 20px;
+    padding: 10px; /* Botones más pequeños */
     background-color: #CE93D8; /* Fondo morado pastel */
     color: white;
-    font-size: 18px;
+    font-size: 16px; /* Texto más pequeño */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,6 +102,7 @@ button:hover {
 #calculator-buttons button:hover {
     background-color: #AB47BC; /* Cambiar color al pasar el mouse */
 }
+
 
 #graphContainer {
     width: 100%; 
