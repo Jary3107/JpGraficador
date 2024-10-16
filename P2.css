@@ -11,7 +11,10 @@ h1 {
     text-align: center;
     color: #4A148C; /* Morado oscuro */
 }
-
+h2 {
+    text-align: center;
+    color: #4A148C; /* Morado oscuro */
+}
 /* Estilos para los labels */
 label {
     font-size: 10px; /* Cambia el tamaño de los labels */
