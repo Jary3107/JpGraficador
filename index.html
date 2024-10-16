@@ -19,8 +19,7 @@
     <input type="number" id="tStart" placeholder="Inicio de t" />
     <input type="number" id="tEnd" placeholder="Fin de t" />
     <button onclick="calculate()">Calcular</button>
-
-     <div id="calculator-buttons">
+<div id="calculator-buttons">
     <button onclick="insertValue('1')">1</button>
     <button onclick="insertValue('2')">2</button>
     <button onclick="insertValue('3')">3</button>
@@ -41,11 +40,18 @@
     <button onclick="insertValue('/')">/</button>
     <button onclick="insertValue('Math.PI')">π</button>
 
-    <button onclick="insertValue('Math.E')">e</button>
+    <button onclick="insertValue('Math.E')">e</button> <!-- Botón de Euler -->
     <button onclick="insertValue('Math.sqrt(')">√</button>
     <button onclick="insertValue('**')">^</button>
     <button onclick="clearInput()">C</button>
+
+    <!-- Botones para seno y coseno -->
+    <button onclick="insertValue('Math.sin(')">sin</button>
+    <button onclick="insertValue('Math.cos(')">cos</button>
+    <button onclick="insertValue('Math.tan(')">tan</button>
+    <button onclick="insertValue('Math.log(')">ln</button>
 </div>
+
 </div>
 
 <div id="output"></div>
