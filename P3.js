@@ -12,9 +12,9 @@ function clearInput() {
 function parametricToFunction(func) {
     const [xFunc, yFunc, zFunc] = func.split(',').map(f => f.trim());
     return { 
-        x: new Function('t', `return ${xFunc.replace(/(sin|cos)/g, 'Math.$1')}`), 
-        y: new Function('t', `return ${yFunc.replace(/(sin|cos)/g, 'Math.$1')}`), 
-        z: new Function('t', `return ${zFunc.replace(/(sin|cos)/g, 'Math.$1')}`) 
+       x: new Function('t', `return ${xFunc.replace(/(sin|cos|exp|pow|\^)/g, 'Math.$1').replace(/\^/g, '**').replace(/e/g, 'Math.exp')}`), 
+        y: new Function('t', `return ${yFunc.replace(/(sin|cos|exp|pow|\^)/g, 'Math.$1').replace(/\^/g, '**').replace(/e/g, 'Math.exp')}`), 
+        z: new Function('t', `return ${zFunc.replace(/(sin|cos|exp|pow|\^)/g, 'Math.$1').replace(/\^/g, '**').replace(/e/g, 'Math.exp')}`) 
     };
 }
 
